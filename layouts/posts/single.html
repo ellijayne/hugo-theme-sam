@@ -1,7 +1,14 @@
 {{ define "section_content" }}
 <div class="section" id="content">
-    {{ .Date.Format (.Params.dateForm | default "Mon Jan 02, 2006") }}
-    {{ with .Params.tags }}
+  
+
+    {{ .Date.Format ( .Params.dateForm | default "Mon Jan 02, 2006")}}
+
+  
+
+    {{ with .Tags }}
+
+
     <div class="tag-container">
         {{ range . }}
         <span class="tag">
