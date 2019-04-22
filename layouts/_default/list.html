@@ -7,7 +7,7 @@
             <a href="{{.Permalink}}">
                 {{.Title}}
             </a>
-            :
+            -
             {{ if .Params.date }}
 
             {{ .Date.Format ( .Params.dateForm | default "Mon Jan 02, 2006")}}
